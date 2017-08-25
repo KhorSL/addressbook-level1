@@ -215,6 +215,11 @@ public class AddressBook {
         showWelcomeMessage();
         processProgramArgs(args);
         loadDataFromStorage();
+        runProgramCommands();
+    }
+
+    // Commands that run the program
+    private static void runProgramCommands() {
         while (true) {
             String userCommand = getUserInput();
             echoUserCommand(userCommand);
