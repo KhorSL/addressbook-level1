@@ -125,6 +125,14 @@ Examples:
   `update 2 John Doe p/91234567 e/johndoe@gmail.com`
   > Updates the 2nd person in the address book. NAME: `John Doe`, PHONE_NUMBER: `91234567`, EMAIL: `johndoe@gmail.com`
 
+#### Undo actions command: `undo`
+> Undo the previous changes to the address book.
+Format: `undo`
+
+#### Redo actions command: `redo`
+> Redo the previous changes to the address book.
+Format: `redo`
+
 #### Exiting the program: `exit`
 Format: `exit`  
 
