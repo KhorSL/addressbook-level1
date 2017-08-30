@@ -113,6 +113,18 @@ Examples:
 > Clears all entries from the address book.  
 Format: `clear`  
 
+#### Update a person (based on index): `update`
+  > Update a single person particulars based on the index last shown in the most recent listing.
+
+Format: `update INDEX NAME p/PHONE_NUMBER e/EMAIL`
+  > Words in `UPPER_CASE` are the parameters.<br>
+  The index refers to the index numbers shown in the most recent listing.
+  
+Examples:
+* `list`<br>
+  `update 2 John Doe p/91234567 e/johndoe@gmail.com`
+  > Updates the 2nd person in the address book. NAME: `John Doe`, PHONE_NUMBER: `91234567`, EMAIL: `johndoe@gmail.com`
+
 #### Exiting the program: `exit`
 Format: `exit`  
 
