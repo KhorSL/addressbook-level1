@@ -69,8 +69,24 @@
 || clear: Clears address book permanently.
 || 	Example: clear
 || 
+|| undo: Undo to previous state, if any.
+|| 	Example: undo
+|| 
+|| redo: Fast forward to later state, if any.
+|| 	Example: redo
+|| 
+|| update: Update a person particulars in the address book. The person is identified by the index used in the last find/list call.
+|| 	Parameters: INDEX NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: update 3 John Doe p/91234567 e/johnd@gmail.com
+|| 
 || exit: Exits the program.	Example: exit
 || help: Shows program usage instructions.	Example: help
+|| ===================================================
+|| Enter command: || [Command entered:  undo]
+|| There are no actions to undo.
+|| ===================================================
+|| Enter command: || [Command entered:  redo]
+|| There are no actions to redo.
 || ===================================================
 || Enter command: || [Command entered:  clear]
 || Address book has been cleared!
@@ -131,6 +147,23 @@
 || ===================================================
 || Enter command: || [Command entered:  add Betsy Choo p/222222 e/benchoo@nus.edu.sg]
 || New person added: Betsy Choo, Phone: 222222, Email: benchoo@nus.edu.sg
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
+|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 
+|| 2 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:  undo]
+|| Successful undo!
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
+|| 
+|| 1 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:  redo]
+|| Successful redo!
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
@@ -259,6 +292,27 @@
 || 
 || 3 persons found!
 || ===================================================
+|| Enter command: || [Command entered:  undo]
+|| Successful undo!
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
+|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	3. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 	4. Esther Potato  Phone Number: 555555  Email: esther@notreal.potato
+|| 
+|| 4 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:  redo]
+|| Successful redo!
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Adam Brown  Phone Number: 111111  Email: adam@gmail.com
+|| 	2. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	3. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 
+|| 3 persons found!
+|| ===================================================
 || Enter command: || [Command entered:  delete 1]
 || Deleted Person: Adam Brown  Phone Number: 111111  Email: adam@gmail.com
 || ===================================================
@@ -270,6 +324,22 @@
 || ===================================================
 || Enter command: || [Command entered:  clear]
 || Address book has been cleared!
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 
+|| 0 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:  undo]
+|| Successful undo!
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	2. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 
+|| 2 persons found!
+|| ===================================================
+|| Enter command: || [Command entered:  redo]
+|| Successful redo!
 || ===================================================
 || Enter command: || [Command entered:  list]
 || 

@@ -6,6 +6,14 @@
   sfdfd
 
 ##########################################################
+# check empty undo/redo stack
+##########################################################
+
+  # should have no actions to undo/redo
+  undo
+  redo
+
+##########################################################
 # clean and check state
 ##########################################################
 
@@ -31,6 +39,12 @@
   add Adam Brown p/111111 e/adam@gmail.com
   list
   add Betsy Choo p/222222 e/benchoo@nus.edu.sg
+  list
+
+  # test undo/redo command after add person command
+  undo
+  list
+  redo
   list
 
   # order of phone and email should not matter
@@ -87,9 +101,21 @@
   delete 4
   list
 
+  # test undo/redo command after deleting person
+  undo
+  list
+  redo
+  list
+
   # listing indexes get updated on next request
   delete 1
   list
+
+##########################################################
+# test update command
+##########################################################
+
+
 
 ##########################################################
 # test clear command
@@ -97,6 +123,12 @@
 
   # clears all
   clear
+  list
+
+  # test undo/redo command after clearing address book
+  undo
+  list
+  redo
   list
 
 ##########################################################
