@@ -115,8 +115,22 @@
 # test update command
 ##########################################################
 
+# last active view: [1] betsy [2] charlie
 
-
+  # should catch invalid args format
+  update
+  update Betsy Choo p/9183742 e/betsychoo@gmail.com
+    
+  # should catch invalid index
+  update 3 Betsy Choo p/9183742 e/betsychoo@gmail.com
+    
+  # update
+  update 1 Betsy Choo p/9183742 e/betsychoo@gmail.com
+    
+  # test undo/redo after updating person
+  undo
+  list
+    
 ##########################################################
 # test clear command
 ##########################################################

@@ -322,6 +322,36 @@
 || 
 || 2 persons found!
 || ===================================================
+|| Enter command: || [Command entered:  update]
+|| Invalid command format: update 
+|| update: Update a person particulars in the address book. The person is identified by the index used in the last find/list call.
+|| 	Parameters: INDEX NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: update 3 John Doe p/91234567 e/johnd@gmail.com
+|| 
+|| ===================================================
+|| Enter command: || [Command entered:  update Betsy Choo p/9183742 e/betsychoo@gmail.com]
+|| Invalid command format: update 
+|| update: Update a person particulars in the address book. The person is identified by the index used in the last find/list call.
+|| 	Parameters: INDEX NAME p/PHONE_NUMBER e/EMAIL
+|| 	Example: update 3 John Doe p/91234567 e/johnd@gmail.com
+|| 
+|| ===================================================
+|| Enter command: || [Command entered:  update 3 Betsy Choo p/9183742 e/betsychoo@gmail.com]
+|| The person index provided is invalid
+|| ===================================================
+|| Enter command: || [Command entered:  update 1 Betsy Choo p/9183742 e/betsychoo@gmail.com]
+|| Before updated Person: Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| After updated Person: Betsy Choo  Phone Number: 9183742  Email: betsychoo@gmail.com
+|| ===================================================
+|| Enter command: || [Command entered:  undo]
+|| Successful undo!
+|| ===================================================
+|| Enter command: || [Command entered:  list]
+|| 	1. Betsy Choo  Phone Number: 222222  Email: benchoo@nus.edu.sg
+|| 	2. Dickson Ee  Phone Number: 444444  Email: dickson@nus.edu.sg
+|| 
+|| 2 persons found!
+|| ===================================================
 || Enter command: || [Command entered:  clear]
 || Address book has been cleared!
 || ===================================================

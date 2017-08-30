@@ -144,7 +144,7 @@ public class AddressBook {
 
     private static final String COMMAND_REDO_WORD = "redo";
     private static final String COMMAND_REDO_DESC = "Fast forward to later state, if any.";
-    private static final String COMMAND_REDO_EXAMPLE = COMMAND_UNDO_WORD;
+    private static final String COMMAND_REDO_EXAMPLE = COMMAND_REDO_WORD;
 
     private static final String COMMAND_UPDATE_WORD = "update";
     private static final String COMMAND_UPDATE_DESC = "Update a person particulars in the address book. "
